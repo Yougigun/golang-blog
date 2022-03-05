@@ -3,9 +3,6 @@ services:
         build: .
         image: gary/golang-blog:latest
         container_name: "gary_golang-blog"
-        # environment:
-        #     # server 
-        #     - WEB_CONCURRENCY=8
         ports:
-            - 3000:3000
+            - 9999:3000
         restart: on-failure
